@@ -2,13 +2,11 @@
     <form @submit="onSubmit">
         <div class="desc-input control">
             <label for="task">Task: </label>
-            <input type="text" placeholder="Enter task" class="input" v-model="description" name="description">
-            <p>{{description}}</p>
+            <input type="text" placeholder="What is next?" class="input" v-model="description" name="description">
         </div>
         <div class="task-time control" >
             <label for="time">Time: </label>
-            <input type="text" placeholder="Enter time" class="input" v-model="time" name="time" >
-            <p>{{time}}</p>
+            <input type="text" placeholder="At what time?" class="input" v-model="time" name="time" >
         </div>
         <div class="reminder control">
             <label for="reminder">Reminder:</label>
@@ -64,7 +62,7 @@ export default {
     }
     .input {
         width: 300px;
-        height: 30px;
+        height: 35px;
         border: 0;
         border-radius: 5px;
     }
@@ -76,6 +74,15 @@ export default {
     border-radius: 5px;
     height: 35px;
     width: 80px;
-    margin-left: 10rem;
+    margin-left: 8rem;
+    }
+
+    form {
+        margin-left: 5rem;
+    }
+
+    ::placeholder {
+        font-style: italic;
+        font-size: 12px;
     }
 </style>

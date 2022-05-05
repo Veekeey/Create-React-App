@@ -18,14 +18,16 @@ export default {
 
 <style>
     .task {
-        background-color: #f4f4f4;
+        background-color: #fff;
         margin: 5px;
         padding: 5px 5px;
         height: 80px;
+        border: 2px solid #eee;
     }
 
     .task.reminder {
-        border-left: 5px solid green;
+        border-left: 3px solid green;
+        border-radius: 5px;
     }
     
     .task h3 {

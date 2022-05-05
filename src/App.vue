@@ -78,7 +78,10 @@ export default {
 <style>
   .tracker {
     width: 40%;
-    border: 1px solid;
+    border: 1px solid #eeee;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    margin-top: 3rem;
   }
 
   .btn {
